@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+/* Flotadores genéricos que se cargan en todas las páginas */
+.left{float:left;}
+	
+.right{float: right;}
+
+.red{color:#c82b27;}
+
+.green{color:#a2c025;}
+
+.blue{color:#293689;}
+
+/* CSS del footer */
+
+footer { padding:10px 12px;  margin-top: 50px;background-color: #293689; color: white; text-align:left}
+
+footer #logo_footer{width: 300px; clear: none;}
+
+footer #logo_footer img{border: none; display:inline;}
+
+footer .menu_col {width: 190px; margin:5px;}
+
+footer a, footer a:visited, footer a:link{color: white; text-decoration:none; margin: 0 6px;}
+
+footer a:hover{color: #DDDDDD;}
+
+footer a:active{font-weight:bold;}
+
+footer ul {list-style: none; padding: 0px; margin: 0px}
+	
+footer h4 {display: block; width: 100%; border-bottom: 1px white solid; margin: 3px; color: white;}
+
+footer .menu_col h5{
+	margin: 5px 1px 5px 1px; font-size: 12px; 
+	display: block; width: 100%; border-bottom: 1px white solid; 
+	}
+
+footer .menu_col p{margin: 0px 6px;}
+
+footer .center {text-align:center}

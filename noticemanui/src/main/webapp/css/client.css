@@ -1,0 +1,205 @@
+@CHARSET "UTF-8";
+
+/* Inicialización de HTML5 para otros navegadores */
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display:block; zoom:1; }
+
+/* Main blocks */
+
+html, * {padding: 0px; margin: 0px;}
+
+body { font:13px/150% Helvetica Neue, Helvetica, sans-serif; padding: 0px; margin: 0px;}
+
+h1, h2, h3, h4, h5, h6, nav  {font-family: Georgia, Helvetica Neue, Times, Serif}
+
+img { border: 0; padding: 0px; margin: 0px;}
+
+a {color: #293689; padding: 0px; margin: 0px;}
+
+nav, nav ul, nav ul li, header, h2 {padding: 0px; margin: 0px;display: inline-block;}
+
+/* Form blocks */
+form label{
+	padding: 0.5em;
+	width: 11em;
+	display:inline-block;
+	text-align: right;
+}
+form input{
+	padding: 0.2em;
+	margin: 0.5em;
+	width: 15em;
+	font-size: 1.1em;
+}
+form textarea{
+	padding: 0.2em;
+	margin: 0.5em;
+	width: 50em;
+	min-height: 10em;
+}
+form select{
+	padding: 0.2em;
+	margin: 0.5em;
+}
+
+
+/* Header */
+
+header h2 {margin: 10px 10px 10px 20px; display:inline-block;
+}
+
+nav#upperbar {display: block; float: right; text-align: right; width: 600px;}
+
+nav#upperbar ul li a {display: inline-block; padding: 4px 7px 4px 4px; text-decoration:none;}
+
+nav#upperbar ul li a:hover {color: #ccdf7d;}
+
+nav#mainmenu {float: right; display: block; text-align: right; width: 700px;}
+
+nav#mainmenu ul {display: inline-block;}
+
+nav#mainmenu ul li {margin-top: 39px;}
+
+nav#mainmenu ul li a{padding: 5px 15px; text-decoration:none; display:block;
+	border-radius:10px 10px 0px 0px;-moz-border-radius: 10px 10px 0px 0px; -webkit-border-radius : 10px 10px 0px 0px;}
+
+nav#mainmenu ul li.actual a{background-color: #293689; color: white;}
+
+nav#mainmenu ul li a:hover{background-color: #7883c4;}
+	
+nav#submenu { background-color: #293689; display:block; color:white; }
+
+nav#submenu ul { display:block; width: 1000px; margin: 0px auto;}
+
+nav#submenu ul li a {display: inline-block; padding: 4px 7px 4px 4px; color: white; text-decoration: none;}
+
+nav#submenu ul li a:hover {color: #ccdf7d}
+
+/* Article */
+
+#main, article {display: block; width: 1000px; margin: 0 auto; padding:50px 0px;}
+
+#main article {padding:0px}
+
+article h1 { margin: 10px 0px 10px 0px;}
+
+section{ width: 600px; padding: 10px 30px 70px; margin-bottom: 50px; border: solid 1px #E5E5E5; float:left;	}
+
+aside { width: 200px; padding: 10px 15px; margin: 0px 0px 20px 20px; border: solid 1px #E5E5E5; float:left;
+	color:grey; text-align:justify;font-size: 12px; overflow: hidden; word-wrap: break-word; }
+	
+section:focus, section:hover,
+aside:focus, aside:hover  { border-color: #C9C9C9; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; }
+
+/* Nav bar */
+
+/*nav ul { display: inline; padding: 0;}
+nav ul li{ display: inline-block;}
+nav a { color: white; padding: 3px; display: block; text-decoration: none; border-left: 1px solid white;}
+nav a:hover{background-color: #94AACB}*/
+
+/*Enlaces estandard */
+article a, article a:visited {
+	text-decoration: underline;
+	color: #506687;
+	font-weight:normal;
+}
+article a:hover{
+	color: #7288A9;
+}
+article ul{
+	margin: 0 0 0 30px;
+}
+/* Forms style */
+
+section form h3{
+	margin: 30px 0px 10px;
+	}
+section .submit{
+	width: auto;
+	padding: 9px 15px;
+	background: #617798;
+	border: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+	
+section input.submit:hover{
+	background: #7288A9;
+	}
+section .submit label{
+	text-align:left;
+	}
+article input, article textarea { 
+	padding: 9px;
+	border: solid 1px #E5E5E5;
+	outline: 0;
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	width: 180px;
+	background: #FFFFFF url('bg_form.png') left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+article input {
+	width: 250px;
+	}
+article textarea {
+	width: 95%;
+	height: 261px;
+	line-height: 150%;
+	}
+
+article input:hover, article textarea:hover,
+article input:focus, article textarea:focus { 
+	border-color: #C9C9C9; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+	}
+article input.subject { 
+	width: 340px;
+	margin: 15px 0px;
+}
+article input.large{
+	width: 300px;
+	}
+article form p.attach, article form p.reply{
+	margin: 10px 0px;
+	}
+
+.form label { 
+	margin-left: 10px; 
+	color: #999999; 
+	}
+.pricebox{
+	display:inline-block;
+	width: 300px;
+	margin:0 10px;
+	padding:0px;
+}
+.pricebox input{
+	display:inline-block;
+	width: 300px;
+	margin:0px;
+	padding:0px;
+}
+#prices {
+	width:1000px;
+}
+#prices h2{
+	display:block;
+	font-size: 2em;
+}
+#prices .price{
+	margin:0px;
+	padding: 0px;
+	border:0px;
+}
+#prices label{
+	display:inline-block;
+	width: 50%;
+	text-align: justify;
+}
